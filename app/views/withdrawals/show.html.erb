@@ -1,0 +1,30 @@
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Listing Withdrawl</h3>
+</div>
+<div class="panel-body">
+<p>
+  <strong>Ammount:</strong>
+  <%= @withdrawal.ammount %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @withdrawal.date.strftime( "%m/%d/%Y") %>
+</p>
+  </div>
+  <div class="panel-footer">
+  <%= link_to 'Edit', edit_withdrawal_path(@withdrawal), class: "btn btn-warning" %> |
+<%= link_to 'Back', withdrawals_path, class: "btn btn-danger" %>
+</div>
+</div>
+</div>
+</div>

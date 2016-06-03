@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1">
+    <div class="row">
+      <div id="landing-content" class="col-lg-9">
+        <h3><b>Welcome,</b></h3>
+        <p>
+          An Open Source Online Banking app using Ruby on Rails. This is not an exact copy of Banking S/W but has a similar functionality. This is to demonstrate how easy is it develop to a Online Banking app using Ruby on Rails.
+        </p>
+        <p>
+        Deposite On Your Account
+        </p>
+        <p>
+        <% if user_signed_in? %>
+         <%= link_to "Start", new_deposite_path, class: "btn btn-success" %>
+         <% end %>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+      
+           

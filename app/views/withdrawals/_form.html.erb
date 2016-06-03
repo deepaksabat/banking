@@ -1,0 +1,20 @@
+<%= simple_form_for @withdrawl do |f| %>
+  <% if @withdrawl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@withdrawl.errors.count, "error") %> prohibited this withdrawl from being saved:</h2>
+
+      <ul>
+      <% @withdrawl.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-inputs">
+    <%= f.input_field :date, class: "form-controle datepicker", as: :string %>
+    <%= f.input :ammount %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
